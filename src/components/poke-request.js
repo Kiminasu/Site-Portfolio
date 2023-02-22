@@ -1,5 +1,7 @@
 function PokeRequest(){
-let url = "https://pokeapi.co/api/v2/pokemon/ditto"
+let valor = document.getElementById("valor");
+let valoreal = valor.value.toLowerCase();
+let url = `https://pokeapi.co/api/v2/pokemon/${valoreal}`
 
 
 fetch(url)

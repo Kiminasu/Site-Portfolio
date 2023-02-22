@@ -6,22 +6,27 @@ function Createcard() {
         <div className="Megazordiv">
             <div className={styles.CardContainer}>
 
-                <div id="Pokemon">
-                <h2 id="PokeName"></h2>
+                <div className={styles.PokeName}>
+                <h2 id="PokeName">NOME</h2>
                 </div>
 
-                <div id="PokemonImagem">
-                    <img id="PokemonImg" src="" alt="Imagem do Pokémon" />
+                <div className={styles.PokemonImagem} id="PokemonImagem">
+                    <img id="PokemonImg" src=".\src\img\Logo-Pokebola-Pokémon-PNG.png" alt="Imagem do Pokémon" />
                 </div>
 
-                <div id="IdInfo">
+                <div className={styles.IdInfo}>
                 <h2>ID</h2>
                 <h3 id="PokeId"></h3>
                 </div>
 
             </div>
 
-            <div className="BtnContainer">
+            <div className={styles.PokeInput}>
+                <label htmlFor="text">Digite o nome ou ID do Pokemon</label><br></br>
+                <input id="valor" type="text" />
+            </div>
+
+            <div className={styles.BtnContainer}>
                 <button id="Btn1" onClick={PokeRequest}>Procurar</button>
             </div>
         </div>

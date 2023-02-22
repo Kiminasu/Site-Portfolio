@@ -8,6 +8,7 @@ function App() {
     <div className="App">
      <h1>Pokémon</h1>
      <Createcard />
+     
     </div>
   )
 }
